@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85456E962BD061AD00B45215 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 85456E952BD061AD00B45215 /* Crypto */; };
-		85456E982BD061AD00B45215 /* _CryptoExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 85456E972BD061AD00B45215 /* _CryptoExtras */; };
 		857389B72BD056C60035C548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857389B62BD056C60035C548 /* AppDelegate.swift */; };
 		857389B92BD056C60035C548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857389B82BD056C60035C548 /* SceneDelegate.swift */; };
 		857389BB2BD056C60035C548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857389BA2BD056C60035C548 /* ViewController.swift */; };
 		857389BE2BD056C60035C548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857389BC2BD056C60035C548 /* Main.storyboard */; };
 		857389C02BD056C80035C548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857389BF2BD056C80035C548 /* Assets.xcassets */; };
 		857389C32BD056C80035C548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857389C12BD056C80035C548 /* LaunchScreen.storyboard */; };
+		85A344032BD064F2005CFB2C /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A344022BD064F2005CFB2C /* ApplicationView.swift */; };
+		85A344052BD06540005CFB2C /* Ushur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A344042BD06540005CFB2C /* Ushur.swift */; };
+		85A344072BD06582005CFB2C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A344062BD06582005CFB2C /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		857389BF2BD056C80035C548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		857389C22BD056C80035C548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		857389C42BD056C80035C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A344022BD064F2005CFB2C /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
+		85A344042BD06540005CFB2C /* Ushur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ushur.swift; sourceTree = "<group>"; };
+		85A344062BD06582005CFB2C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,8 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85456E982BD061AD00B45215 /* _CryptoExtras in Frameworks */,
-				85456E962BD061AD00B45215 /* Crypto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +65,9 @@
 				857389B62BD056C60035C548 /* AppDelegate.swift */,
 				857389B82BD056C60035C548 /* SceneDelegate.swift */,
 				857389BA2BD056C60035C548 /* ViewController.swift */,
+				85A344022BD064F2005CFB2C /* ApplicationView.swift */,
+				85A344042BD06540005CFB2C /* Ushur.swift */,
+				85A344062BD06582005CFB2C /* Utilities.swift */,
 				857389BC2BD056C60035C548 /* Main.storyboard */,
 				857389BF2BD056C80035C548 /* Assets.xcassets */,
 				857389C12BD056C80035C548 /* LaunchScreen.storyboard */,
@@ -88,8 +93,6 @@
 			);
 			name = "ushur-example-app";
 			packageProductDependencies = (
-				85456E952BD061AD00B45215 /* Crypto */,
-				85456E972BD061AD00B45215 /* _CryptoExtras */,
 			);
 			productName = "ushur-example-app";
 			productReference = 857389B32BD056C60035C548 /* ushur-example-app.app */;
@@ -120,8 +123,6 @@
 			);
 			mainGroup = 857389AA2BD056C60035C548;
 			packageReferences = (
-				85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */,
-				85456E992BD061F400B45215 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */,
 			);
 			productRefGroup = 857389B42BD056C60035C548 /* Products */;
 			projectDirPath = "";
@@ -150,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A344072BD06582005CFB2C /* Utilities.swift in Sources */,
 				857389BB2BD056C60035C548 /* ViewController.swift in Sources */,
 				857389B72BD056C60035C548 /* AppDelegate.swift in Sources */,
+				85A344052BD06540005CFB2C /* Ushur.swift in Sources */,
 				857389B92BD056C60035C548 /* SceneDelegate.swift in Sources */,
+				85A344032BD064F2005CFB2C /* ApplicationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ushur-example-app/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = IrisLife;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,6 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ushur-example-app/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = IrisLife;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -375,38 +381,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-crypto.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.3.0;
-			};
-		};
-		85456E992BD061F400B45215 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googlemaps/google-maps-ios-utils.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		85456E952BD061AD00B45215 /* Crypto */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */;
-			productName = Crypto;
-		};
-		85456E972BD061AD00B45215 /* _CryptoExtras */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */;
-			productName = _CryptoExtras;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 857389AB2BD056C60035C548 /* Project object */;
 }

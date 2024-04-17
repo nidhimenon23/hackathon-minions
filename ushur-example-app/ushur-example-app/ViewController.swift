@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Ushur
 
 class ViewController: UIViewController {
 
@@ -14,9 +13,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Login"
+        Ushur.configure(portalId: "adsasd", apiKey: "asdasd")
         
     }
 
 
+    @IBAction func actionClicked(_ sender: Any) {
+            
+        Ushur.renderApplication()
+
+    }
 }
 
