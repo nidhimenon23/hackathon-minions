@@ -56,9 +56,9 @@ Invoke App
 ```swift
 import Ushur
 
-Ushur.render()
+Ushur.loadApplication()
 
-}
+
 ```
 
 License
