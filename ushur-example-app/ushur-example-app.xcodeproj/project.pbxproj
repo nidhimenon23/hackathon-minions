@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85456E962BD061AD00B45215 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 85456E952BD061AD00B45215 /* Crypto */; };
+		85456E982BD061AD00B45215 /* _CryptoExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 85456E972BD061AD00B45215 /* _CryptoExtras */; };
 		857389B72BD056C60035C548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857389B62BD056C60035C548 /* AppDelegate.swift */; };
 		857389B92BD056C60035C548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857389B82BD056C60035C548 /* SceneDelegate.swift */; };
 		857389BB2BD056C60035C548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857389BA2BD056C60035C548 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85456E982BD061AD00B45215 /* _CryptoExtras in Frameworks */,
+				85456E962BD061AD00B45215 /* Crypto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = "ushur-example-app";
+			packageProductDependencies = (
+				85456E952BD061AD00B45215 /* Crypto */,
+				85456E972BD061AD00B45215 /* _CryptoExtras */,
+			);
 			productName = "ushur-example-app";
 			productReference = 857389B32BD056C60035C548 /* ushur-example-app.app */;
 			productType = "com.apple.product-type.application";
@@ -112,7 +120,8 @@
 			);
 			mainGroup = 857389AA2BD056C60035C548;
 			packageReferences = (
-				857389CA2BD059BD0035C548 /* XCRemoteSwiftPackageReference "hackathon-minions" */,
+				85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */,
+				85456E992BD061F400B45215 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */,
 			);
 			productRefGroup = 857389B42BD056C60035C548 /* Products */;
 			projectDirPath = "";
@@ -368,15 +377,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		857389CA2BD059BD0035C548 /* XCRemoteSwiftPackageReference "hackathon-minions" */ = {
+		85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nidhimenon23/hackathon-minions";
+			repositoryURL = "https://github.com/apple/swift-crypto.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.0;
+			};
+		};
+		85456E992BD061F400B45215 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/google-maps-ios-utils.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85456E952BD061AD00B45215 /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = Crypto;
+		};
+		85456E972BD061AD00B45215 /* _CryptoExtras */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85456E942BD061AD00B45215 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = _CryptoExtras;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 857389AB2BD056C60035C548 /* Project object */;
 }
