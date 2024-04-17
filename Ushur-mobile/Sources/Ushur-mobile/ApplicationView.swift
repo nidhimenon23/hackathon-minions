@@ -9,18 +9,18 @@ import  UIKit
 import Foundation
 import WebKit
 
-class ApplicationView: UIViewController, WKNavigationDelegate {
+public class ApplicationView: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
     var url = URL(string: "")!
 
-    override func loadView() {
+    public override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
         view = webView
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
     
@@ -49,15 +49,15 @@ class ApplicationView: UIViewController, WKNavigationDelegate {
     
     // MARK: - WKNavigationDelegate
     
-    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+    public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print("WebView failed to load: \(error.localizedDescription)")
     }
     
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+    public  func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         print("WebView started loading")
     }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    public  func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("WebView finished loading")
     }
     
