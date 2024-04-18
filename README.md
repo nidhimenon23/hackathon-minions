@@ -17,12 +17,6 @@ Choose from the following options to install Ushur iOS SDK.
 
 ### Github
 
-Add the following snippet to the Podfile to install directly from Github.
-
-```swift
-pod 'ushur-mobile', :git => 'https://github.com/nidhimenon23/hackathon-minions', :tag => '1.0.28'
-```
-
 
 ### Swift Package Manager
 
