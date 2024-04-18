@@ -36,8 +36,7 @@ There are two types of configuration.
 ```swift
 import Ushur
 
-Ushur.configure(portalId: "portal_id",
-                    apiKey: "publishable_api_key",
+Ushur.configure(apiKey: "Ushur_api_key",
                     sdkKey: "SDK Key")
 }
 ```
@@ -50,8 +49,7 @@ Invoke App
 ```swift
 import Ushur
 
-Ushur.render()
+Ushur.render(portalId: "portal_id")
 
-}
 ```
 
