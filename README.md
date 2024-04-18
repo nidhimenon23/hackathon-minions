@@ -4,7 +4,7 @@ Ushur iOS
 Requirements
 ------------
 
-The following requirements must be set up prior to installing Chargebee's iOS SDK
+The following requirements must be set up prior to installing Ushur's iOS SDK
 
 -   iOS 12+
 
@@ -13,7 +13,7 @@ The following requirements must be set up prior to installing Chargebee's iOS SD
 Installation
 ------------
 
-Choose from the following options to install Chargeee iOS SDK.
+Choose from the following options to install Ushur iOS SDK.
 
 ### Github
 
@@ -61,7 +61,3 @@ Ushur.render()
 }
 ```
 
-License
--------
-
-Chargebee is available under the [MIT license](https://opensource.org/licenses/MIT). For more information, see the LICENSE file.
