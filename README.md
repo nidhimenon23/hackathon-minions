@@ -49,7 +49,7 @@ Invoke App
 ```swift
 import Ushur
 
-Ushur.render(portalId: "portal_id")
+Ushur.renderApplication(portalId: "portal_id")
 
 ```
 
